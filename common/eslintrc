@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "eqeqeq": ["error", "always"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
+    // Disabled
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "linebreak-style": "off",
+    "max-len": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-unused-expressions": "off",
+
+    // Warning
+    "array-bracket-spacing": ["warn"],
+    "object-curly-spacing": ["warn"],
+    "block-spacing": ["warn"],
+    "comma-style": ["warn"],
+    "func-call-spacing": ["warn"],
+    "key-spacing": ["warn"],
+    "keyword-spacing": ["warn"],
+    "no-useless-escape": ["warn"],
+    "space-before-blocks": ["warn"],
+    "space-infix-ops": ["warn"],
+    "space-in-parens": ["warn"],
+    "no-floating-decimal": ["warn"],
+
+    // Error
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }],
+    "comma-dangle": ["error", "always-multiline"],
+    "import/extensions": ["error", "never"],
+    "max-lines": ["error", 1440],
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+    "no-param-reassign": ["error", { "props": false }],
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": ["error", "always"],
+    "no-else-return": ["error"]
+  }
+}
