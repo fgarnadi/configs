@@ -2,11 +2,8 @@
 
 add_newline = false
 
-[batery]
+[battery]
 disabled = true
-
-[character]
-use_symbol_for_status = true
 
 [directory]
 truncation_length = 0
